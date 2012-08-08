@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+
+	<title>Como navegar de forma an&ocirc;nima</title>
+	
+	<!-- Required stylesheet -->
+	<link rel="stylesheet" href="core/deck.core.css">
+	
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
+
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="themes/style/neon.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+	
+	<!-- Required Modernizr file -->
+	<script src="modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+
+<section class="slide">
+	<h1>Navegando de forma anonima</h1>
+</section>
+
+<section class="slide">
+	<h2>TOR</h2>
+	<li>O primeiro passo para navegar anonimamente é conseguir um IP diferente através de um PROXY</li>
+	<li>A maneira mais fácil e barate de se conseguir isso é utilizando a rede TOR.</li>
+	<li>Tor é um software e uma rede open source que utiliza rotas randômicas através de seus nós.</li>
+	<li>Todo o dado que trafega pela rede é criptogrado e não rastreável</li>
+	<li>Mais informações em <a href="https://www.torproject.org/" target="_blank">https://www.torproject.org/</a> </li>
+	<p></p>
+	<img src="images/tor-logo.jpg" />	
+</section>
+
+<section class="slide">
+	<h2>Passo a passo</h2>
+	<ul>
+		<li>Baixar o <em>Tor Broser Bundle</em> <a href="https://www.torproject.org/download/download-easy.html.en" target="_blank">aqui</a></li>
+		<ul>
+			<li>O Bundle contém uma versão "portátil" do Firefox já configurada para funcionar com a rede</li>			
+		</ul>
+		<li>Após a instalação inicie o aplicativo "Start Tor Browser.exe" na pasta que foi criada</li>
+			<ul>
+				<li>Você será conectado automaticamente à rede e o Firefox portátil (<em>anonimizado</em>) será inicializado</li>
+				<li>No programa ainda existem outras opções, como "mudar de identidade", útil quando se que trocar o "ip final"</li>
+			</ul>
+	</ul>
+</section>
+<section class="slide">
+<h2>Fique anônimo de verdade!</h2>
+<p>Para garantir sua privacidade é necessários seguir alguma recomendações importantes:</p>
+<ul>
+	<li>Use o browser do bundle</li>
+	<li>
+		Não instale plugins no browser
+		<ul>
+			<li>Flash e similares vêm desabilitados por padrão, uma vez que podem ser manipulados de forma a revelar seu real IP</li>
+		</ul>		
+	</li>
+	<li>
+		Use HTTPS quando disponível
+		<ul>
+			<li>Isso garante uma conexão criptografada de ponta-a-ponta</li>
+		</ul>		
+	</li>
+	<li>
+		Não abra documentos baixos pelo TOR enquanto estiver online
+		<ul>
+			<li>NÃO IGNORE ESSE AVISO. Isso vale especialmente para arquivos .DOC e .PDF</li>
+		</ul>		
+	</li>
+	<li>
+		Use um <em>tor bridge</em>.
+		<ul>
+			<li>O tor não previne que outras pessoas que têm acesso a sua rede saibam que você está usando a rede Tor</li>
+		</ul>		
+	</li>
+
+</ul>
+</section>
+<section class="slide">
+<h2>Não negligencie seu passado</h2>
+<li>
+	Nunca, NUNCA logue com seu navegador "anonimizado" em contas que você tenha utilizado previamente sem ele
+	<ul>
+		<li>Gmail, Youtube etc mantêm um LOG acessos. Fazendo cruzamento de dados seria possível descobrir sua identidade</li>		
+	</ul>	
+</li>
+<li>Isso siginifica que você terá que <strong>criar contas novas</strong>, não "infectadas"</li>
+<p></p>
+</section>
+<section class="slide">
+	<h2>Opções pagas</h2>
+	<p>Existem também proxyes pagos, que geralmente funcionam através de VPNs. Nesse caso, todo o seu tráfego é feito através do Proxy. Diferente do Tor que inicialmente fica restrito ao browser habilitado.</p>
+	<p>Esse tipo de mecanismo é muito utilizado para acessar conteúdos que apresentam restrições regionais (filmes disponíveis apenas para quem acessa dos EUA etc.)</p>
+	<p>Alguns proxyes com foco na privacidade que podemos citar são:</p>
+	<ul>
+		<li><a target="_blank" href="https://privacy.io/">Privacy.io</a></li>
+		<li><a target="_blank" href="http://proxpn.com/">ProXPN</a></li>
+		<li><a target="_blank" href="http://hidemyass.com/">Hide my Ass</a></li>
+	</ul>
+</section>
+<section class="slide">
+<h1>Enjoy your privacy!</h1>
+</section>
+
+<!-- End slides. -->
+
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="jquery-1.7.2.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
