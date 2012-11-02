@@ -278,6 +278,12 @@ body.deck-container {
   vertical-align: middle;
 }
 
+/*.slide li li {
+  margin-left: 10px;
+  font-size: 80%;
+}*/
+
+
 .deck-before, .deck-previous, .deck-next, .deck-after {
   position: absolute;
   left: -999em;
