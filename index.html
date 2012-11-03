@@ -36,10 +36,15 @@
 </section>
 <section class="slide">
 	<h2>Introdução</h2>
-	<ul>
-		<p>Para navegar na internet você precisa utilizar um provedor de acessos, comumente chamado de ISP (do inglês <em>internet service provider</em>). No brasil os principais são NET, GVT, OI, Telefônica etc.</p>
-		<p>Sempre que você se conecta seu ISP te designa um <a href="http://pt.wikipedia.org/wiki/Endere%C3%A7o_IP" target="_blank">endereço IP</a> (ou simplesmente <em>IP</em>). Esse endereço serve para você se comunicar com outros computadores e servidores na Internet. Quando você digita google.com.br no seu navegador seu computador consulta um servidor de DNS que o informa para qual endereço IP esse domínio está "apontando". No caso do google.com.br o IP é: <a href="http://74.125.234.24" target="_blank" rel="nofollow">74.125.234.24</a>.</p>
-		<p>Quando você se conecta a um servidor seu endereço IP é exposto. Seja:<p>
+	
+	<p>Para navegar na internet você precisa utilizar um provedor de acessos, comumente chamado de ISP (do inglês <em>internet service provider</em>). No brasil os principais são NET, GVT, OI, Telefônica etc.</p>
+	
+	<p>Sempre que você se conecta seu ISP te designa um <a href="http://pt.wikipedia.org/wiki/Endere%C3%A7o_IP" target="_blank">endereço IP</a> (ou simplesmente <em>IP</em>). Esse endereço serve para você se comunicar com outros computadores e servidores na Internet. Quando você digita google.com.br no seu navegador seu computador consulta um servidor de DNS que o informa para qual endereço IP esse domínio está "apontando". No caso do google.com.br o IP é: <a href="http://74.125.234.24" target="_blank" rel="nofollow">74.125.234.24</a>.</p>
+	
+</section>
+<section class="slide">
+	<h2>Introdução</h2>
+	<p>Quando você se conecta a um servidor seu endereço IP é exposto. Seja:<p>
 			<ul>
 				<li>navegando em um website</li>
 				<li>baixando um arquivo</li>
@@ -48,9 +53,9 @@
 				<li>utilizando um serviço de emails</li>
 			</ul>
 		
-		<p>Mesmo que seu IP possa ser relativamente randômico, em função da designação do seu provedor de acessos, essas empresas matêm registros (<em>logs</em>) de qual IP cada um de seus usuários estava utilizando, com dia e horário.</p>
-		<p>Para ver seu IP atual acesse: <a href="http://qualmeuip.com.br/" target="_blank" rel="nofollow">http://qualmeuip.com.br/</a></p>		
-	</ul>
+		<p>Mesmo que seu IP possa ser relativamente randômico e dependenda da designação do seu provedor de acessos, essas empresas matêm registros (<em>logs</em>) de qual IP cada um de seus usuários estava utilizando, com dia e horário.</p>
+		<p>Para ver seu IP atual acesse: <a href="http://qualmeuip.com.br/" target="_blank" rel="nofollow">http://qualmeuip.com.br/</a></p>
+		<p id="seuip">a</p>
 </section>
 
 <section class="slide">
@@ -204,6 +209,12 @@
 	$(function() {
 		$.deck('.slide');
 	});
+</script>
+
+<!-- Script que exibe o ip -->
+<script>
+	var IPAddress = '<!--#echo var="REMOTE_ADDR"-->';
+	$('#seuip').text(IPAddress);
 </script>
 </body>
 </html>
